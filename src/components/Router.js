@@ -2,6 +2,7 @@ import { useState } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Auth from "../routes/Auth";
 import Home from "../routes/Home";
+import UcfXmlTool from "../routes/UcfXmlTool";
 
 const AppRouter = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -14,7 +15,7 @@ const AppRouter = () => {
           </Route>
         ) : (
           <Route exact path="/">
-            <Auth />
+            <UcfXmlTool />
           </Route>
         )}
       </Switch>

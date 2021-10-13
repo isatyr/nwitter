@@ -5,9 +5,10 @@ import Pane from 'react-split-pane';
 
 const UcfXmlTool = () => {    
     return (
-        <SplitPane>
-            <Pane minSize="200px" initialSize="500px">This Pane has a minimum size of 200px</Pane>
-            <Pane/>
+        <SplitPane split="vertical">
+          <Pane initialSize="200px" minSize="10%">You can use a Pane component</Pane>
+          <Pane>Using a Pane allows you to specify any constraints
+            directly</Pane>
         </SplitPane>
     );
   };
